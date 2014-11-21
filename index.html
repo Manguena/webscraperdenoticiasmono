@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<title>Última Hora</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+<!--SLIDESHOW DA PAGINA INICIAL-->
+
+<!-- CSS for slidesjs.com example -->
+  <link rel="stylesheet" href="../livraria/example.css">
+  <link rel="stylesheet" href="../livraria/font-awesome.min.css">
+  
+  <!--teste de uso de arkivo externo para css que eu nao queria-->
+  
+  <link rel="stylesheet" href="../livraria/style.css" />
+  <!-- fim do estes de javascript ki eu nao queria--->
+ <!-- SlidesJS Required: -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../livraria/jquery.slides.min.js"></script> 
+  
+ 
+ <!--FIM DE SLIDESHOW DA PAGINA INICIAL-->
+
+
+
+
+	</head>
+	
+	<body>
+		
+		<!--fazer com que a pagina fica fora da memoria cache-->
+		<div data-role="page" id="home" >
+		  
+		
+		
+		<header data-role="header" role="banner" data-theme="b">
+				<h1>
+					ÚLTIMA HORA
+				</h1>
+				
+		</header>
+		
+		
+			
+			<!--insercao de extensao de jquery mobile: camera-->
+	<div class="container">
+           <div id="slides">
+    <img src="../imagem/ultima.jpg">
+    <img src="../imagem/ultima2.jpg">
+          <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+  </div> 
+           
+     </div>      
+           
+  
+
+  <script>
+  
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+   
+  </script>
+	
+         <!--fim de insercao de camera-->			
+		
+		
+		
+		<!--LINKS DE NAVEGAXAO-->
+		<article role="main" class="ui-content">
+			<ul data-role="listview" data-inset="false" data-filter="true" data-filter-placeholder="Pesquise a fonte de notícia">
+				
+				<li><a href="/sapo/sapo_list.php" data-prefetch="true"> <img src="/imagem/sapo.gif" /><h2>Sapo Notícias</h2></a></li>
+				<li><a href="/aim/aim_list.php" data-prefetch="true"><img src="/imagem/aim.gif" /><h2>AIM</h2> <p>Agência de Informação de Moçambique </p></a></li>
+			    <li><a href="/portgov/portgov_list.php" data-prefetch="true"><img src="/imagem/portal.gif" /><h2>Portal do Governo</h2></a></li>
+			    <li><a href="/noticias/noticias_list.php" data-prefetch="true"><img src="/imagem/noticias.gif"/><h2>Jornal Notícias</h2></a></li>
+			    <li><a href="/verdade/verdade_list.php" data-prefetch="true"><img src="/imagem/verdade.gif"/><h2>A Verdade Online </h2></a></li>
+			    
+		    
+			    
+			</ul>
+			
+		</article>
+		<!--FIM DOS LINKS DE NAVEGACAO-->
+		
+		<footer data-role="collapsible" class="cont3" data-collapsed-icon="carat-d" data-theme="b" >
+			<h4>Acerca</h4>
+			<p>
+			Ultima hora é um web scraper de notícia para dispositivos móveis e tem como objectivo 
+			facilitar o acesso de notícias para usuários de dispositivos móveis através da integração 
+			de várias fontes digitais de notícias numa só fonte. 
+			</p>
+			
+			<p>
+			Este projecto foi criado para uma monografia de licenciatura em Engenharia Informática e espera-se 
+			que possa evoluir e possuir várias funcionalidades para o usuário.
+			</ p>
+			
+			<p>
+			Nao se pretende de forma alguma substituir o meio convencional de acesso a notícias 
+			quer seja electrônico ou não, mas oferecer uma alternativa de elevada qualidade e 
+			que se baseia na oferta de notícias recentes.
+			</p>
+			
+			<p>
+				Espera-se que esta aplicação possa trazer alguma mudanca positiva na vida das pessoas e possa
+				ser muito útil.
+			</ p>
+			
+			
+		</footer>
+		
+		
+		
+		<footer data-role="collapsible"  class="cont3" data-collapsed-icon="carat-d" data-theme="b">
+			<h4>Contacto</h4>
+			
+			NOME DO DESENVOLVEDOR: Jordão Manguena <br/>
+			PAIS: Moçambique <br />
+			CIDADE: Beira <br />
+			INSTITUIÇÃO: desenvolvido na Universidade Zambeze- Faculdade de Ciências e Tecnologia <br />
+			EMAIL: não disponível para o público <br />
+			2014 <br />
+		</footer>
+		
+		
+		
+		</div>
+		
+	</body>
+	
+	
+</html>
